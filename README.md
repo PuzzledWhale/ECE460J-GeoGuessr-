@@ -7,7 +7,7 @@ https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-e
 Once you have your virtual environment running, make sure to install all the right packages and libraries for the project. You can do this by navigating to the github repo on a command line or terminal and entering the following command:
 `python -m pip install -r requirements-cuda.txt`
 or alternatively if you do NOT have cuda installed on your computer (or if you do not own a computer with a NVIDIA GPU):
-`python -m pip install -r requirements-cuda.txt`
+`python -m pip install -r requirements.txt`
 
 ## Dataset and Models
 The dataset is too big to be stored on Github (it is 7GB!), so you need to download the dataset locally yourself. The dataset can be found here:
