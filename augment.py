@@ -18,7 +18,7 @@ def augment_images():
     new_data_count = 0
     for country in os.listdir(data_path):
         country_path = os.path.join(data_path, country)
-        if len(os.listdir(country_path)) < 20:
+        if len(os.listdir(country_path)) < 50:
             images = []
             for img in os.listdir(country_path):
                 img_path = os.path.join(country_path, img)
