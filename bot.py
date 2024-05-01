@@ -33,7 +33,7 @@ def on_press(key):
         print("\nScreenshotted! Feeding image into model...")
         image = pyautogui.screenshot()
         image = crop_center(image, 1536, 662)
-        # image.save('cropped.png') # use this if you want to see the screenshot that is being fed into the model
+        image.save('cropped.png') # use this if you want to see the screenshot that is being fed into the model
         image_input = preprocess(image).unsqueeze(0).to(device)
 
         with torch.no_grad():
